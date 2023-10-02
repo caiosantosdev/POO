@@ -8,11 +8,11 @@ public class UFC {
 		Scanner scan = new Scanner(System.in);
 		Lutador [] lutadores = new Lutador[10];
 		for(int i = 0; i < lutadores.length ; i++) {
-			System.out.println("insira o nome do lutador" + i);
+			System.out.println("insira o nome do lutador " + i);
 			String nome = scan.nextLine();
-			System.out.println("insira o peso do lutador" + i);
+			System.out.println("insira o peso do lutador " + i);
 			double peso = scan.nextDouble();
-			System.out.println("Insira a idade do lutador" + i);
+			System.out.println("Insira a idade do lutador " + i);
 			int idade = scan.nextInt();
 			if(peso <= 120.2 && peso > 93.0) {
 				lutadores[i] = new PesoPesado(nome, idade, peso);
